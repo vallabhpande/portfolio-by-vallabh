@@ -75,11 +75,12 @@ const About = () => {
         Let’s team up and bring your vision to life — the smart, creative, and tech-savvy way! 💡💻🌟
       </motion.p>
 
-      <div className='mt-20 grid grid-cols-3 flex-wrap gap-10'>
+      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 items-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
 
     </>
   );
